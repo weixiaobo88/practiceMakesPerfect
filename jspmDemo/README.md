@@ -23,7 +23,7 @@
     
     Using ES 5.
 
-3. Execute "jspm bundle-sfx lib/main" in command line, and comments '<script>' tags except "build.js" in index.html, then you should see texts  in "console" within browser are as follows:
+3. Execute "jspm bundle-sfx lib/main" in command line, and comments "script" tags except "build.js" in index.html, then you should see texts  in "console" within browser are as follows:
     
     ```
     hello, this is from users

@@ -1,0 +1,26 @@
+apply plugin: 'jetty'
+apply plugin: 'spring-boot'
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
+    }
+}
+
+dependencies {
+    compile project(':core')
+    testCompile 'junit:junit:4.10'
+}
+
+jar {
+    baseName = 'spring-demo'
+    version = '0.1.0'
+}
+
+springBoot {
+    mainClass = "com.tw.core.Application"
+}
